@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build
+.next/
+**/.next/
+out/
+
+# Environment variables
+.env*.local
+congreso/.env*.local
+
+# Data & cache
+.data/
+**/.data/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# WhatsApp auth session
+auth_info_baileys/
+**/auth_info_baileys/
