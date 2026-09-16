@@ -8,14 +8,14 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         const base = this.getAttribute('base-path') || './';
         this.innerHTML = `
-        <nav class="navbar">
+        <nav class="navbar" role="navigation" aria-label="Navegación principal">
             <div class="nav-container">
-                <a href="${base}index.html" class="logo">
+                <a href="${base}index.html" class="logo" aria-label="Página de Inicio - María Camino a Jesús">
                     <img src="${base}assets/logo-negativo.png" class="logo-light" alt="Logo Claro">
                     <img src="${base}assets/logo.png" class="logo-dark" alt="Logo Oscuro">
                     <span class="logo-text">María Camino a Jesús</span>
                 </a>
-                <div class="nav-links">
+                <div class="nav-links" id="mainNavLinks">
                     <a href="https://congreso.mariacaminoajesus.org" target="_blank" rel="noopener noreferrer" class="nav-congreso-pill">
                         <span class="nav-pill-dot"></span>
                         <span>Congreso 2026</span>
@@ -26,10 +26,11 @@ class AppHeader extends HTMLElement {
                     <a href="${base}informativa/obras.html">Obras</a>
                     <a href="${base}informativa/contacto.html" class="btn-primary">Contacto</a>
                 </div>
-                <button class="mobile-menu-btn">
+                <button type="button" class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mainNavLinks">
                     <i data-lucide="menu"></i>
                 </button>
             </div>
+            <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
         </nav>
         `;
         // Lucide icons might need to be refreshed if injected dynamically

@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
     <!-- Main Styles -->
     <link rel="stylesheet" href="style.css">
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <!-- Web Components -->
     <script src="js/components.js" defer></script>
 </head>
@@ -51,7 +51,7 @@
     <main>
         <section class="hero" style="min-height: 80vh;">
             <div class="hero-bg">
-                <img src="assets/hero.webp" alt="Portal Principal">
+                <img src="assets/hero.webp" alt="Portal Principal de la Asociación María Camino a Jesús" width="1920" height="1080" fetchpriority="high">
                 <div class="hero-overlay"
                     style="background: linear-gradient(135deg, rgba(26,62,130,0.85) 0%, rgba(112,184,223,0.7) 100%);">
                 </div>
@@ -63,9 +63,7 @@
                 <h1 class="hero-title" style="margin-top: 0; margin-bottom: 0;">
                     <span>María Camino a Jesús</span>
                 </h1>
-                <span class="hero-subtitle"
-                    style="color: var(--clr-primary-gold); margin-top: -1.5rem; display: block; position: relative;">Desde
-                    1992, al servicio de la Iglesia</span>
+                <span class="hero-subtitle">Desde 1992, al servicio de la Iglesia</span>
                 <p class="hero-description">Te damos la bienvenida.</p>
                 <div class="hero-cta-wrapper">
                     <a href="https://congreso.mariacaminoajesus.org" target="_blank" rel="noopener noreferrer" class="btn-congreso-cta">
@@ -86,8 +84,8 @@
         </section>
 
         <!-- Gran Menú de Accesos Rápidos -->
-        <section class="section-padding"
-            style="background-color: transparent; margin-top: -100px; position:relative; z-index: 10;">
+        <section class="section-padding hero-overlap-section"
+            style="background-color: transparent; position:relative; z-index: 10;">
             <div class="container" style="max-width: 1300px;">
                 <div class="marcha-content slide-in-up delay-1"
                     style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
