@@ -44,6 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // Banner Superior Congreso
+        const closeCongresoBar = document.getElementById('closeCongresoBar');
+        const congresoTopBar = document.getElementById('congresoTopBar');
+        if (closeCongresoBar && congresoTopBar) {
+            closeCongresoBar.addEventListener('click', () => {
+                congresoTopBar.style.transform = 'translateY(-100%)';
+                congresoTopBar.style.opacity = '0';
+                setTimeout(() => {
+                    congresoTopBar.remove();
+                    document.body.classList.remove('has-congreso-banner');
+                }, 300);
+            });
+        }
+
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+
         // Animación Hero instantánea
         const heroContent = document.querySelector('.hero-content');
         if(heroContent) {

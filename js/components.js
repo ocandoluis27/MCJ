@@ -16,6 +16,10 @@ class AppHeader extends HTMLElement {
                     <span class="logo-text">María Camino a Jesús</span>
                 </a>
                 <div class="nav-links">
+                    <a href="https://congreso.mariacaminoajesus.org" target="_blank" rel="noopener noreferrer" class="nav-congreso-pill">
+                        <span class="nav-pill-dot"></span>
+                        <span>Congreso 2026</span>
+                    </a>
                     ${AppHeader.novenaActiva() ? `<a href="${base}novena.html" class="nav-novena">🌹 Novena a María Auxiliadora</a>` : ''}
                     <a href="${base}fiestamisericordia.html" class="nav-fiesta">✨ Fiesta de la Misericordia 2026</a>
                     <a href="${base}informativa/quienes-somos.html">Nosotros</a>
@@ -50,6 +54,7 @@ class AppFooter extends HTMLElement {
                 </div>
                 <div class="footer-links">
                     <h4>Navegación</h4>
+                    <a href="https://congreso.mariacaminoajesus.org" target="_blank" rel="noopener noreferrer" style="color: var(--clr-primary-gold); font-weight: 700;">🎫 Congreso Gracia y Misericordia</a>
                     ${AppHeader.novenaActiva() ? `<a href="${base}novena.html" style="color: var(--clr-primary-gold); font-weight: 700;">🌹 Novena a María Auxiliadora</a>` : ''}
                     <a href="${base}fiestamisericordia.html" style="color: var(--clr-primary-gold); font-weight: 700;">✨ Fiesta de la Misericordia 2026</a>
                     <a href="${base}informativa/quienes-somos.html">Nosotros</a>
